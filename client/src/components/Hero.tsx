@@ -1,0 +1,49 @@
+import React from 'react';
+
+interface HeroProps {
+  onSeeSpeakers: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onSeeSpeakers }) => {
+  return (
+    <div className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')`,
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/20 to-black z-1" />
+
+      <div className="relative z-10 text-center px-4 max-w-5xl">
+        <h2 className="text-red-600 font-oswald text-xl md:text-2xl font-bold tracking-[0.4em] mb-6 uppercase">
+          TEDxJabal Tareq
+        </h2>
+        <h1 className="text-white font-oswald text-6xl md:text-9xl font-extrabold mb-8 leading-none tracking-tighter">
+          Maybe <span className="text-red-600">You?</span>
+        </h1>
+        <p className="text-gray-300 text-lg md:text-3xl mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+          Ideas worth spreading at the gateway of continents.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          {/* Ticket booking – commented out */}
+          {/* <button 
+            onClick={onGetTickets}
+            className="w-full sm:w-auto bg-red-600 text-white px-12 py-5 rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-[0_0_30px_rgba(235,0,40,0.5)] hover:scale-105 active:scale-95"
+          >
+            Get Tickets
+          </button> */}
+          <button
+            onClick={onSeeSpeakers}
+            className="w-full sm:w-auto bg-transparent border-2 border-white/20 text-white px-12 py-5 rounded-full font-bold text-lg hover:border-red-600 hover:text-red-600 transition-all"
+          >
+            Meet Speakers
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

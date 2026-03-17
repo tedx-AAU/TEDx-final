@@ -1,0 +1,35 @@
+import React from 'react';
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-black border-t border-white/5 pt-24 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-20">
+          <span className="font-oswald text-4xl font-bold mb-8 block">
+            <span className="text-red-600">TEDx</span>Jabal Tareq
+          </span>
+          <p className="text-gray-400 max-w-sm mb-10 leading-relaxed text-lg font-light">
+            Independently organized TED event. Bringing visionaries together at
+            the geographic gateway of the world.
+          </p>
+        </div>
+
+        <div className="pt-12 border-t border-white/5 text-center">
+          <p className="text-[10px] text-gray-600 max-w-2xl mx-auto mb-6 uppercase tracking-wider leading-relaxed">
+            This TEDx event is independently organized. TEDx events are operated
+            under license from TED.
+          </p>
+          <p className="text-xs text-gray-400 font-medium mb-2">
+            &copy; {new Date().getFullYear()} TEDxJabal Tareq. Ideas Worth
+            Spreading.
+          </p>
+          <p className="text-xs text-gray-500">
+            Developed by Skyfall Enterprises
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
