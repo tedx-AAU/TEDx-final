@@ -9,10 +9,9 @@ const adminRoutes = require('./routes/admin');
 const registrationRoutes = require('./routes/registration');
 
 const app = express();
-
+app.use(cors());
 connectDB();
 
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -21,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 app.use('/api/contacts', contactsRoutes);
 app.use('/api/speakers', speakersRoutes);
 app.use('/api/admin', adminRoutes);
-app.use('/api/registration', registrationRoutes);
+app.use('/api/registration', require('./routes/registration'));
 
 app.use((err, req, res, next) => {
   console.error(err.stack);

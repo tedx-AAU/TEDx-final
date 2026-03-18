@@ -432,4 +432,14 @@ router.post('/register', async (req, res) => {
   }
 });
 
+
+router.post('/', async (req, res) => {
+    try {
+        console.log("Data received:", req.body);
+     
+        res.status(201).json({ message: 'Registration successful!' });
+    } catch (error) {
+        res.status(500).json({ message: 'Server Error', error });
+    }
+});
 module.exports = router;

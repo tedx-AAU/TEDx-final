@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import {
@@ -87,41 +88,28 @@ const BookingForm: React.FC<BookingFormProps> = ({
     } else {
       onError?.(message);
     }
-  };
+  };const onSubmit = async (data: FormData) => {
+  try {
+    setIsLoading(true);
 
-  const onSubmit = async (data: FormData) => {
-    try {
-      setIsLoading(true);
-      const response = await apiRequest(
-        apiConfig.endpoints.registration.register,
-        'POST',
-        {
-          ...data,
-          numberOfTickets: data.numberOfTickets || 1,
-        }
-      );
+   
+    const response = await axios.post('http://127.0.0.1:5000/api/registration', {
+      ...data,
+      numberOfTickets: data.numberOfTickets || 1,
+    });
 
-      if (!response?.success) {
-        const errorMessage =
-          response?.message || 'Failed to register. Please try again.';
-        showSnackbar(errorMessage, 'error');
-      } else {
-        const successMessage = response.message || 'Registration successful!';
-        showSnackbar(successMessage, 'success');
-        reset();
-        onSubmitSuccess?.();
-      }
-    } catch (error: any) {
-      const errorMessage =
-        error instanceof Error
-          ? error.message
-          : error?.responseData?.message ||
-            'Failed to process registration. Please try again.';
-      showSnackbar(errorMessage, 'error');
-    } finally {
-      setIsLoading(false);
+    if (response.status === 201 || response.status === 200) {
+      showSnackbar('Registration Successful! wait your ticket. ', 'success');
+      reset(); 
     }
-  };
+
+  } catch (error: any) {
+    console.error('Error details:', error);
+    showSnackbar('Server Connection Error', 'error');
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <>
@@ -763,7 +751,6 @@ const BookingForm: React.FC<BookingFormProps> = ({
         autoHideDuration={6000}
         onClose={() => setSnackbar({ ...snackbar, open: false })}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         TransitionComponent={Fade}
       >
         <Alert
