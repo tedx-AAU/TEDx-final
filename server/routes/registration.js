@@ -194,12 +194,12 @@ router.patch('/registrations/:id', async (req, res) => {
       ctx.fillStyle = '#FFFFFF';    
 ctx.fillText(
   `${updatedRegistration?.fullName} (${updatedRegistration?.numberOfTickets})`, 
-  80,
-  1050  
+          80,   
+          680 
 );
 
         const qrCodeImage = await loadImage(qrCodeDataUrl);
-        ctx.drawImage(qrCodeImage, 780, 850,230 ,230);
+        ctx.drawImage(qrCodeImage, 772, 855,230 ,230);
 
         const finalTicketBuffer = canvas.toBuffer();
 

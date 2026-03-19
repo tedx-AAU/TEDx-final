@@ -572,7 +572,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
               fontSize: '1.1rem',
             }}
           >
-            Terms and Conditions for TEDxJabalTareq Event
+            Terms and Conditions for TEDxAmman Arab University Event
           </Typography>
           <Typography
             variant="body1"
