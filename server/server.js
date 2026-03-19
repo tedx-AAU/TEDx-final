@@ -6,7 +6,7 @@ const connectDB = require('./config/database');
 const speakersRoutes = require('./routes/speakers');
 const contactsRoutes = require('./routes/contacts');
 const adminRoutes = require('./routes/admin');
-const registrationRoutes = require('./routes/registration');
+const Registration = require('./models/Registration'); 
 
 const app = express();
 app.use(cors());

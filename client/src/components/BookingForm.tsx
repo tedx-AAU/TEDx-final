@@ -360,7 +360,7 @@ const BookingForm: React.FC<BookingFormProps> = ({
                   <Grid size={{ xs: 12 }}>
                     <TextField
                       fullWidth
-                      label="How Did You Hear About TEDxJabalTareq"
+                      label="How Did You Hear About TEDxAmman Arab University"
                       multiline
                       rows={4}
                       {...register('heard', {

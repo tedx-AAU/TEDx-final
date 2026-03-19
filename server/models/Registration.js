@@ -13,7 +13,7 @@ const registrationSchema = new mongoose.Schema(
     heard: { type: String, required: true },
     about: { type: String, required: false },
     numberOfTickets: { type: Number, default: 1 },
-    status: { type: String, default: 'pending' },
+    status: { type: String, default: 'Pending' },
     customerNumber: { type: Number },
   },
   { timestamps: true }

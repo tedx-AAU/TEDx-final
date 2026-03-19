@@ -54,7 +54,7 @@ interface Registration {
   heard: string;
   about: string;
   numberOfTickets: number;
-  status: 'pending' | 'Accepted' | 'Rejected';
+  status: 'Pending' | 'Accepted' | 'Rejected';
   createdAt?: string;
   updatedAt?: string;
 }
@@ -686,23 +686,23 @@ const TicketsManagement: React.FC = () => {
                       All
                     </Button>
                     <Button
-                      variant={filter === 'pending' ? 'contained' : 'outlined'}
+                      variant={filter === 'Pending' ? 'contained' : 'outlined'}
                       onClick={() => {
-                        setFilter('pending');
+                        setFilter('Pending');
                         setPage(1);
-                        fetchRegistrations(1, search, 'pending');
+                        fetchRegistrations(1, search, 'Pending');
                       }}
                       sx={{
                         background:
-                          filter === 'pending' ? '#E62B1F' : 'transparent',
-                        color: filter === 'pending' ? '#FFFFFF' : '#E62B1F',
+                          filter === 'Pending' ? '#E62B1F' : 'transparent',
+                        color: filter === 'Pending' ? '#FFFFFF' : '#E62B1F',
                         borderColor: '#E62B1F',
                         textTransform: 'none',
                         fontWeight: 600,
                         borderRadius: 2,
                         '&:hover': {
                           background:
-                            filter === 'pending'
+                            filter === 'Pending'
                               ? '#c5241a'
                               : 'rgba(230, 43, 31, 0.1)',
                         },
@@ -894,7 +894,7 @@ const TicketsManagement: React.FC = () => {
                                       },
                                     }}
                                     disabled={
-                                      registration?.status !== 'pending'
+                                      registration?.status !=='Pending'
                                     }
                                     onClick={(e) => {
                                       e.stopPropagation();
@@ -916,7 +916,7 @@ const TicketsManagement: React.FC = () => {
                                       },
                                     }}
                                     disabled={
-                                      registration?.status !== 'pending'
+                                      registration?.status !== 'Pending'
                                     }
                                     onClick={(e) => {
                                       e.stopPropagation();

@@ -8,7 +8,7 @@ const createTransporter = () => {
     secure: false,
     auth: {
       user: 'tedxammanarabuniversity@gmail.com',
-      pass: 'nsky ucuj hfgw qujn',
+      pass: 'nskyucujhfgwqujn',
     },
   });
 };

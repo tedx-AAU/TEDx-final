@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
           >
             <span className="font-oswald text-2xl font-bold">
               <span className="text-red-600">TEDx</span>
-              <span className="text-white">Jabal Tareq</span>
+              <span className="text-white">Amman Arab University</span>
             </span>
           </div>
 
