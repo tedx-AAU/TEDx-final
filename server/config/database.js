@@ -2,8 +2,13 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const connectDB = async () => {
+  const uri = process.env.MONGODB_URI;
+  if (!uri) {
+    console.error('Database connection error: MONGODB_URI is not set');
+    process.exit(1);
+  }
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
+    await mongoose.connect(uri);
   } catch (error) {
     console.error('Database connection error:', error.message);
     process.exit(1);

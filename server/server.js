@@ -10,7 +10,6 @@ const Registration = require('./models/Registration');
 
 const app = express();
 app.use(cors());
-connectDB();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -22,16 +21,24 @@ app.use('/api/speakers', speakersRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/registration', require('./routes/registration'));
 
+app.use('*', (req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-app.use('*', (req, res) => {
-  res.status(404).json({ error: 'Route not found' });
-});
+async function start() {
+  await connectDB();
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+    console.log(`Environment: ${process.env.NODE_ENV}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-  console.log(`Environment: ${process.env.NODE_ENV}`);
+start().catch((err) => {
+  console.error('Server failed to start:', err);
+  process.exit(1);
 });
