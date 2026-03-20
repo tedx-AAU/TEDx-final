@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import {
@@ -88,28 +87,27 @@ const BookingForm: React.FC<BookingFormProps> = ({
     } else {
       onError?.(message);
     }
-  };const onSubmit = async (data: FormData) => {
-  try {
-    setIsLoading(true);
+  };
 
-   
-    const response = await axios.post('http://127.0.0.1:5000/api/registration', {
-      ...data,
-      numberOfTickets: data.numberOfTickets || 1,
-    });
+  const onSubmit = async (data: FormData) => {
+    try {
+      setIsLoading(true);
 
-    if (response.status === 201 || response.status === 200) {
+      await apiRequest(apiConfig.endpoints.registration.register, 'POST', {
+        ...data,
+        numberOfTickets: data.numberOfTickets || 1,
+      });
+
       showSnackbar('Registration Successful! wait your ticket. ', 'success');
-      reset(); 
+      reset();
+      onSubmitSuccess?.();
+    } catch (error: unknown) {
+      console.error('Error details:', error);
+      showSnackbar('Server Connection Error', 'error');
+    } finally {
+      setIsLoading(false);
     }
-
-  } catch (error: any) {
-    console.error('Error details:', error);
-    showSnackbar('Server Connection Error', 'error');
-  } finally {
-    setIsLoading(false);
-  }
-};
+  };
 
   return (
     <>

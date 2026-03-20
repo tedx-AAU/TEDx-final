@@ -1358,7 +1358,6 @@ const TicketsManagement: React.FC = () => {
         open={snackbar.open}
         autoHideDuration={6000}
         onClose={() => setSnackbar({ ...snackbar, open: false })}
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         TransitionComponent={Fade}
       >
