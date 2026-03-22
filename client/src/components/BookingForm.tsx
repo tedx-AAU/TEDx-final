@@ -41,6 +41,8 @@ interface FormData {
   agreeTerms: boolean;
 }
 
+const TICKET_PRICE_JD = 5;
+
 interface BookingFormProps {
   onSubmitSuccess?: () => void;
   onError?: (message: string) => void;
@@ -77,6 +79,12 @@ const BookingForm: React.FC<BookingFormProps> = ({
   });
 
   const isStudent = watch('isStudent');
+  const numberOfTicketsWatched = watch('numberOfTickets');
+  const ticketCount = Math.max(
+    1,
+    Number(numberOfTicketsWatched) || 1,
+  );
+  const totalJd = ticketCount * TICKET_PRICE_JD;
   const isLoading = externalLoading !== undefined ? externalLoading : loading;
   const setIsLoading = setExternalLoading || setLoading;
 
@@ -166,6 +174,17 @@ const BookingForm: React.FC<BookingFormProps> = ({
                   }}
                 >
                   Join us for an inspiring TEDx experience
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    mt: 2,
+                    fontWeight: 600,
+                    color: '#E62B1F',
+                    fontSize: { xs: '1rem', sm: '1.1rem' },
+                  }}
+                >
+                  Ticket price: {TICKET_PRICE_JD} JD per person
                 </Typography>
               </Box>
 
@@ -389,10 +408,14 @@ const BookingForm: React.FC<BookingFormProps> = ({
                       >
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
                           <MenuItem key={num} value={num}>
-                            {num}
+                            {num} — {num * TICKET_PRICE_JD} JD
                           </MenuItem>
                         ))}
                       </Select>
+                      <FormHelperText>
+                        {TICKET_PRICE_JD} JD per ticket. Estimated total:{' '}
+                        {totalJd} JD.
+                      </FormHelperText>
                     </FormControl>
                   </Grid>
 
