@@ -11,12 +11,6 @@ import speaker1 from './src/assets/images/10.jpg';
 import speaker2 from './src/assets/images/8.jpg';
 import speaker3 from './src/assets/images/7.jpg';
 import speaker4 from './src/assets/images/6.jpg';
-import speaker5 from './src/assets/images/3.jpg';
-import speaker6 from './src/assets/images/1.jpg';
-import speaker7 from './src/assets/images/11.jpg';
-import speaker8 from './src/assets/images/4.jpg';
-import speaker9 from './src/assets/images/2.jpg';
-import speaker10 from './src/assets/images/9.jpg';
 
 // Import team member images
 import organizerImg from './src/assets/images/24.jpg';
@@ -34,8 +28,6 @@ import team10 from './src/assets/images/15.jpg';
 import team11 from './src/assets/images/18.jpg';
 import team12 from './src/assets/images/16.jpg';
 import team13 from './src/assets/images/29.jpg';
-import team14 from './src/assets/images/28.jpg';
-import team15 from './src/assets/images/27.jpg';
 
 // Import partner logos
 import partnerGold1 from './src/assets/images/31.png';
