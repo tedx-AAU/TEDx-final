@@ -15,13 +15,15 @@ const About: React.FC = () => {
               TED-like experience.
             </p>
             <p>
-              At <strong>TEDxAmman Arab University</strong>, live speakers and deep
-              discussion combine to spark connection at the intersection of
+              At <strong>TEDxAmman Arab University</strong>, live speakers and
+              deep discussion combine to spark connection at the intersection of
               history and innovation.
             </p>
             <p>
               Located at the gateway between worlds, our theme{' '}
-              <span className="text-white font-semibold">"Maybe You?"</span>{' '}
+              <span className="text-white font-semibold">
+                "The Power Of Difference"
+              </span>{' '}
               represents the birthplace of new perspectives.
             </p>
           </div>
