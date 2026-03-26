@@ -16,7 +16,11 @@ import Navbar from './components/Navbar';
 import { AuthProvider } from './contexts/AuthContext';
 import TicketsLogin from './pages/TicketsLogin';
 import TicketsManagement from './pages/TicketsManagement';
-// import TicketsPage from './pages/TicketsPage';
+import SpeakersPage from './pages/SpeakersPage';
+import SchedulePage from './pages/SchedulePage';
+import TeamPage from './pages/TeamPage';
+import TicketsPage from './pages/TicketsPage';
+import Home from './pages/Home'; 
 
 const theme = createTheme({
   palette: {
@@ -50,12 +54,13 @@ const RouterContent: React.FC = () => {
       <ScrollToTop />
       <Routes>
         <Route element={<PublicLayout />}>
-          <Route path="/" element={<Booking />} /> 
+         <Route path="/" element={<Home />} /> 
+         <Route path="/tickets" element={<Booking />} />
           
-          {/* <Route path="/speakers" element={<SpeakersPage />} />
+         <Route path="/speakers" element={<SpeakersPage />} />
           <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/team" element={<TeamPage />} />
-          */}
+          <Route path="/tickets" element={<TicketsPage />} />
         </Route>
 
         <Route path="/tickets-login" element={<TicketsLogin />} /> 
@@ -98,7 +103,7 @@ const PublicLayout: React.FC = () => {
       speakers: '/speakers',
       schedule: '/schedule',
       team: '/team',
-      tickets: '/', // ticket booking commented out
+      tickets: '/tickets',
       'tickets-login': '/tickets-login',
       'tickets-management': '/tickets-management',
     };

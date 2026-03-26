@@ -38,72 +38,62 @@ import team14 from './src/assets/images/28.jpg';
 import team15 from './src/assets/images/27.jpg';
 
 // Import partner logos
-import partnerPlatinum1 from './src/assets/images/30.jpeg';
 import partnerGold1 from './src/assets/images/31.png';
+import partnerGold5 from './src/assets/images/Cpartner.png';
 import partnerGold2 from './src/assets/images/32.png';
 import partnerGold3 from './src/assets/images/33.png';
 import partnerGold4 from './src/assets/images/34.jpeg';
-import partnerGold5 from './src/assets/images/40.jpeg';
-import partnerGold6 from './src/assets/images/41.jpeg';
-import partnerGold7 from './src/assets/images/44.png';
 import partnerSilver1 from './src/assets/images/35.jpeg';
 import partnerSilver2 from './src/assets/images/36.jpeg';
 import partnerSilver3 from './src/assets/images/42.jpeg';
-import partnerSilver4 from './src/assets/images/43.jpeg';
-import partnerSilver5 from './src/assets/images/46.png';
-import partnerMedia1 from './src/assets/images/37.png';
 import partnerMedia2 from './src/assets/images/38.jpeg';
-import partnerRobotics1 from './src/assets/images/39.png';
-import partnerCommunity1 from './src/assets/images/45.png';
+
 
 export const SPEAKERS: Speaker[] = [
   {
     id: '1',
-    name: 'Randa Azar',
-    title:
-      'Founder and Training Consultant at Randa Azar Consultancy for Training & Development',
+    name: 'Haneen Tamimi',
+   title:
+      '',
     speechTitle:
-      'Your Leadership Voice: Building Influence Through Communication',
-    bio: 'With over 30 years of international experience, she specializes in public speaking and leadership development, empowering leaders and teams to unlock their voices and build influential presence.',
+      '',
+    bio: '',
     imageUrl: speaker1,
-    category: 'Leadership',
-    linkedin: 'https://www.linkedin.com/in/randaazar/',
+    category: '',
   },
   {
     id: '2',
-    name: 'Dr. Lama Harb',
-    title: 'Psychologist, Behavioral Doctor, Social Worker, and ABA Specialist',
+    name: 'Farah Owais',
+    title: '',
     speechTitle:
-      'Growth Is Always Possible: Creating Change Through Supportive Environments',
-    bio: 'She works with children, adolescents, and adults to develop behavioral, social, and emotional skills through evidence-based therapeutic approaches, believing that growth and change are possible at any age.',
+      '',
+    bio: '',
     imageUrl: speaker2,
-    category: 'Psychology',
-    instagram: 'https://www.instagram.com/p/DSNJa5nDAE7/?igsh=N201dm8yMHN2a3Q4',
+    category: '',
   },
   {
     id: '3',
-    name: 'Odai Baqaeen',
+    name: 'Mohammad Nabhan',
     title:
-      'Co-Founder and Managing Partner at 180 Degrees for Empowering People',
+      '',
     speechTitle:
-      '180 Degrees of Empowerment: Clarity, Confidence, and Lasting Impact',
-    bio: 'With over 15 years of experience in leadership, sales, and people development. A certified trainer, coach, and motivational speaker passionate about helping individuals and organizations grow with clarity, confidence, and purpose.',
+      '',
+    bio: '',
     imageUrl: speaker3,
-    category: 'Empowerment',
-    linkedin: 'https://www.linkedin.com/in/odaibaqaeen/',
+    category: '',
+   
   },
   {
     id: '4',
-    name: 'Farah Ashour',
+    name: 'Wesam Alkaresheh',
     title:
-      'Fashion Designer, Content Creator, and Founder of Abaya by Farah and Lace Atelier JO',
-    speechTitle: 'Identity in Style: How Fashion Becomes Self-Expression',
-    bio: 'She blends fashion, identity, and lifestyle, using creativity to express individuality and build a distinctive personal and entrepreneurial brand.',
+      '',
+    speechTitle: '',
+    bio: '',
     imageUrl: speaker4,
-    category: 'Fashion',
-    instagram:
-      'https://www.instagram.com/farahashour?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+    category: '',
   },
+  /*
   {
     id: '5',
     name: 'Chef Elyan',
@@ -170,298 +160,226 @@ export const SPEAKERS: Speaker[] = [
     category: 'Youth Empowerment',
     linkedin: 'https://www.linkedin.com/in/hamza-asfour-83138b196/',
   },
+  */
 ];
 
 export const ORGANIZER: Organizer = {
-  name: 'Mohammad Alomari',
-  role: 'Organizer',
-  bio: 'Leading the vision and execution of TEDxJabal Tareq, bringing together passionate individuals to create an inspiring event.',
+  name: 'Abdulrahman Alnajlat',
+  role: 'Deputy Event Lead & Co-Leader Organizer',
+  bio: `Every story starts with an idea,
+        and that idea might be different. 
+        But being different isn't a weakness, it's a strength. 
+        And from there, we turn every unique idea into a force that creates real impact.`,
   imageUrl: organizerImg2,
 };
 
 export const PARTNERS: Partner[] = [
   // Platinum Tier
   {
-    name: 'Hashemite Kingdom of Jordan & Ministry of Culture',
-    logoUrl: partnerPlatinum1,
+    name: 'SKYFALL ENTERPRISES',
+    logoUrl: partnerGold1,
     tier: 'Platinum',
   },
-  // Gold Tier
-  {
-    name: 'Petra Ride',
-    logoUrl: partnerGold1,
-    tier: 'Gold',
+{
+    name: 'Correct',
+    logoUrl: partnerGold5,
+    tier: 'Platinum',
   },
+
+
+ //Gold
   {
-    name: 'Berry',
+    name: 'Solvenear',
     logoUrl: partnerGold2,
     tier: 'Gold',
   },
   {
-    name: 'BANO STUDIO',
+    name: 'Quantum energy pendant',
     logoUrl: partnerGold3,
     tier: 'Gold',
   },
   {
-    name: 'SKYFALL ENTERPRISES',
+    name: 'Annubala',
     logoUrl: partnerGold4,
     tier: 'Gold',
   },
-  {
-    name: 'SHAPE',
-    logoUrl: partnerGold6,
-    tier: 'Gold',
-  },
-  {
-    name: 'Pioneers Academy',
-    logoUrl: partnerGold7,
-    tier: 'Gold',
-  },
-  // Silver Tier
+ 
   {
     name: 'Partner 1',
     logoUrl: partnerSilver1,
-    tier: 'Silver',
+    tier: 'Gold',
   },
   {
     name: 'Partner 2',
     logoUrl: partnerSilver2,
-    tier: 'Silver',
+    tier: 'Gold',
   },
   {
-    name: 'KITCO',
+    name: 'شينالكو',
     logoUrl: partnerSilver3,
-    tier: 'Silver',
+    tier: 'Gold',
   },
-  {
-    name: 'DONUTTERY',
-    logoUrl: partnerSilver4,
-    tier: 'Silver',
-  },
-  {
-    name: 'Auntie Annes',
-    logoUrl: partnerSilver5,
-    tier: 'Silver',
-  },
-  // Media Partners
-  {
+
+ {
     name: 'شبابيك',
-    logoUrl: partnerMedia1,
-    tier: 'Media',
-  },
-  {
-    name: 'رؤيا',
     logoUrl: partnerMedia2,
-    tier: 'Media',
+    tier: 'Gold',
   },
-  {
-    name: 'Tech Arabi',
-    logoUrl: partnerGold5,
-    tier: 'Media',
-  },
-  // Robotics Partners
-  {
-    name: 'QUILL',
-    logoUrl: partnerRobotics1,
-    tier: 'Robotics',
-  },
-  // Community Partners
-  {
-    name: 'Community Partner',
-    logoUrl: partnerCommunity1,
-    tier: 'Community',
-  },
+ 
 ];
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: '1',
-    name: 'Mohammad Alomari',
-    role: 'Organizer',
+    name: 'Dr.Samer Ayasrah',
+    role: 'Licensee & Lead Organizer',
     imageUrl: organizerImg,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/samer-ayasrah-b576615b?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '2',
-    name: "Lujain Abusada'a",
-    role: 'Co-Organizer',
+    name: "Abdulrahman Alnajlat",
+    role: 'Deputy Event Lead & Co-Leader Organizer',
     imageUrl: team1,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/aboodalnajlat03?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '3',
-    name: 'Sultan Hussam',
-    role: 'Team Management',
+    name: 'Hala Ali',
+    role: 'Event lead secretary',
     imageUrl: team2,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/hala-ali-670940342?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '4',
-    name: 'Nour Alhuda Nizar',
-    role: 'Team Management',
+    name: 'Sora Alzetawi',
+    role: 'Media Team Leader',
     imageUrl: team3,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/sora-alzetawi?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '5',
-    name: 'Eman Btoush',
-    role: 'Event Management',
+    name: 'Hedaya Yasin',
+    role: 'Media Team Co-Leader',
     imageUrl: team4,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://jo.linkedin.com/in/hedaya-yasin-615b322b1',
   },
   {
     id: '6',
-    name: 'Fatima Mosleh',
-    role: 'Event Management',
+    name: 'Rama Mustafa',
+    role: 'Program Team Leader',
     imageUrl: team5,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/rama-mustafa-b03b2731b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
   },
   {
     id: '7',
-    name: 'Rahma Aldous',
-    role: 'PR',
+    name: 'Hesham Yehya',
+    role: 'Program Team Co-Leader',
     imageUrl: team6,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/hesham-yehya-61a961356?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+    
   },
   {
     id: '8',
-    name: 'Zaid Mattar',
-    role: 'PR',
+    name: 'Hala Alkiswani',
+    role: 'Sponsorship Team Leader',
     imageUrl: team7,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/hala-alkiswani-b9b4b9366?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+   
   },
   {
     id: '9',
-    name: 'Duha Elyyan',
-    role: 'PR',
+    name: 'Ali Shahen',
+    role: 'Sponsorship Team Co-Leader',
     imageUrl: team8,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/ali-shaheen-3b0462297?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '10',
-    name: "Hussam Ma'aita",
-    role: 'Marketing',
+    name: "Leen Nofal",
+    role: 'Curation Team Leader',
     imageUrl: team9,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/leen-nofal-1766452b3?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '11',
-    name: 'Abeer Nizar',
-    role: 'Marketing',
+    name: 'Aesma Fuaad',
+    role: 'Curation Team Co-Leader',
     imageUrl: team10,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/asmafuaad?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '12',
-    name: 'Tariq Abu Taleb',
-    role: 'Marketing',
+    name: 'Yousef Yasin',
+    role: 'Web Master Team Leader',
     imageUrl: team11,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/yousef-yasin-79b615318?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
   {
     id: '13',
-    name: 'Sara Hammad',
-    role: 'Marketing',
+    name: 'Ruaa Hussein',
+    role: 'Web Master Team Co-Leader',
     imageUrl: team12,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/ruaa-hussin-858bb1352?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+   
   },
   {
     id: '14',
-    name: 'Sujoud Altubasi',
-    role: 'Graphic',
+    name: 'Sameera Dweik',
+    role: 'Presenters Coordinator',
     imageUrl: team13,
-    linkedin: '#',
-    instagram: '#',
-  },
-  {
-    id: '15',
-    name: 'AbdAlrahamn Altahel',
-    role: 'Graphic',
-    imageUrl: team14,
-    linkedin: '#',
-    instagram: '#',
-  },
-  {
-    id: '16',
-    name: 'Farah Zeghan',
-    role: 'Graphic',
-    imageUrl: team15,
-    linkedin: '#',
-    instagram: '#',
+    linkedin: 'https://www.linkedin.com/in/sameera-dweik-0a24a8295?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
   },
 ];
 
 export const SCHEDULE: ScheduleItem[] = [
   {
-    time: '11:00 AM',
-    title: 'Opening Ceremony',
-    description:
-      'Welcome, Introduction of the MC, Introduction of the Organizer & Co-Organizer, Opening of the Sessions',
+    time: '8:45 – 9:45 AM',
+    title: 'Registration and guest reception',
+    description:''
   },
   {
-    time: '11:10 AM',
+    time: '9:50 – 10:15 AM',
+    title: 'Event Opening',
+    description: '',
+  },
+  {
+    time: '10:15 – 11:10 AM',
     title: 'Session 1',
-    description: 'Violin & Live Drawing Performance (20 minutes)',
+    description: '  Speakers & Activities (Part 1)',
   },
   {
-    time: '11:30 AM',
-    title: 'Randa Azar',
-    description: 'Speaker presentation (10 minutes)',
-    speakerId: '1',
+    time: '11:10 – 11:40 AM',
+    title: 'Break',
+    description: '',
+    speakerId: '',
   },
   {
-    time: '11:40 AM',
-    title: 'Dr. Lama Harb',
-    description: 'Speaker presentation (10 minutes)',
-    speakerId: '2',
+    time: '11:40 – 12:25 PM',
+    title: 'Session 1 ',
+    description: 'Speakers & Activities (Part 2)',
   },
   {
-    time: '12:50 PM',
-    title: 'Coffee Break',
-    description: 'Networking and refreshments (30 minutes)',
+    time: '12:25 – 13:25 PM',
+    title: 'Break',
+    description: '',
   },
   {
-    time: '1:00 PM',
-    title: 'Odai Baqaeen',
-    description: 'Speaker presentation (10 minutes)',
-    speakerId: '3',
+    time: '13:25 – 14:20 PM',
+    title: 'Session 2 – Speakers',
+    description: ''
   },
   {
-    time: '1:10 PM',
-    title: 'Farah Ashour',
-    description: 'Speaker presentation (10 minutes)',
-    speakerId: '4',
+    time: '14:20 – 14:40 PM',
+    title: 'Short Break',
+    description: ''
   },
   {
-    time: '1:20 PM',
-    title: 'Chef Elyan',
-    description: 'Speaker presentation (10 minutes)',
-    speakerId: '5',
-  },
-  {
-    time: '1:30 PM',
-    title: 'Seham Alomari',
-    description: 'Speaker presentation (10 minutes)',
-    speakerId: '6',
-  },
-  {
-    time: '2:55 PM',
-    title: 'Food Break',
-    description: 'Lunch break (45 minutes)',
-  },
+    time: '14:40 – 16:00 PM',
+    title: 'Closing & Awards Ceremony',
+    description: '',
+  }, 
+  /*
   {
     time: '3:10 PM',
     title: 'Karim Al-Hammouri',
@@ -502,4 +420,5 @@ export const SCHEDULE: ScheduleItem[] = [
     title: 'Event Conclusion',
     description: 'Thank you for joining us!',
   },
+  */
 ];

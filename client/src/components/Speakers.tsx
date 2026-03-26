@@ -25,7 +25,7 @@ const Speakers: React.FC<SpeakersProps> = ({ onSeeAll }) => {
             key={speaker.id}
             className="group p-8 bg-zinc-900/50 border border-white/5 rounded-3xl hover:border-red-600/50 transition-all"
           >
-            <p className="text-red-500 font-bold uppercase tracking-widest text-[10px] mb-2">
+           <p className="text-red-500 font-bold uppercase tracking-widest text-[10px] mb-2">
               {speaker.category}
             </p>
             <h4 className="text-3xl font-oswald font-bold text-white mb-2">

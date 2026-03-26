@@ -15,7 +15,7 @@ const About: React.FC = () => {
               TED-like experience.
             </p>
             <p>
-              At <strong>TEDxJabal Tareq</strong>, live speakers and deep
+              At <strong>TEDxAmman Arab University</strong>, live speakers and deep
               discussion combine to spark connection at the intersection of
               history and innovation.
             </p>

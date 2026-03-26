@@ -13,8 +13,7 @@ const TeamPage: React.FC = () => {
             OUR <span className="text-red-600">TEAM</span>
           </h1>
           <p className="mt-8 text-gray-400 max-w-2xl mx-auto text-xl font-light">
-            The passionate minds working behind the scenes to make TEDxJabal
-            Tareq a reality.
+            The passionate minds working behind the scenes to make TEDxAmman Arab University a reality.
           </p>
         </header>
 

@@ -39,7 +39,7 @@ const PartnersSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-16">
               <div className="h-px bg-gradient-to-r from-transparent via-red-600/50 to-transparent flex-1"></div>
               <h4 className="text-3xl font-oswald text-white uppercase tracking-[0.15em] font-light">
-                Platinum <span className="font-bold text-red-500">Tier</span>
+                 <span className="font-bold text-red-500"></span>
               </h4>
               <div className="h-px bg-gradient-to-r from-transparent via-red-600/50 to-transparent flex-1"></div>
             </div>
@@ -63,7 +63,7 @@ const PartnersSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-12">
               <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent flex-1"></div>
               <h4 className="text-2xl font-oswald text-white/90 uppercase tracking-[0.15em] font-light">
-                Gold <span className="font-bold text-yellow-500/80">Tier</span>
+                <span className="font-bold text-yellow-500/80"></span>
               </h4>
               <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent flex-1"></div>
             </div>
@@ -87,7 +87,7 @@ const PartnersSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-10">
               <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent flex-1"></div>
               <h4 className="text-xl font-oswald text-white/70 uppercase tracking-[0.15em] font-light">
-                Silver <span className="font-bold text-gray-400">Tier</span>
+                 <span className="font-bold text-gray-400"></span>
               </h4>
               <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent flex-1"></div>
             </div>
@@ -111,7 +111,7 @@ const PartnersSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-10">
               <div className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent flex-1"></div>
               <h4 className="text-xl font-oswald text-white/80 uppercase tracking-[0.15em] font-light">
-                Media <span className="font-bold text-blue-400">Partners</span>
+                <span className="font-bold text-blue-400"></span>
               </h4>
               <div className="h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent flex-1"></div>
             </div>
@@ -135,8 +135,8 @@ const PartnersSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-10">
               <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent flex-1"></div>
               <h4 className="text-xl font-oswald text-white/80 uppercase tracking-[0.15em] font-light">
-                Robotics{' '}
-                <span className="font-bold text-purple-400">Partners</span>
+                
+                <span className="font-bold text-purple-400"></span>
               </h4>
               <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent flex-1"></div>
             </div>
@@ -160,8 +160,8 @@ const PartnersSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-10">
               <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent flex-1"></div>
               <h4 className="text-xl font-oswald text-white/60 uppercase tracking-[0.15em] font-light">
-                Community{' '}
-                <span className="font-bold text-white/40">Partners</span>
+              
+                <span className="font-bold text-white/40"></span>
               </h4>
               <div className="h-px bg-gradient-to-r from-transparent via-white/5 to-transparent flex-1"></div>
             </div>
